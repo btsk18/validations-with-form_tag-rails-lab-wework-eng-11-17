@@ -23,7 +23,7 @@ RSpec.describe "posts/edit", type: :feature do
 
     before(:each) do
       fill_in "Title", with: invalid_attributes[:title]
-      fill_in "Category", with: invalid_attributes[:category]
+      # fill_in "Category", with: invalid_attributes[:category]
       fill_in "Content", with: invalid_attributes[:content]
       click_button "Update"
     end
